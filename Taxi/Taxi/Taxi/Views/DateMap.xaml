@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="Taxi.Views.DateMap"
+             BackgroundImage="bgg.png">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout VerticalOptions="StartAndExpand" Padding="30">
+                <maps:Map VerticalOptions="Fill" HeightRequest="300" 
+            x:Name="MyMap"
+            IsShowingUser="true"
+            MapType="Street"
+                          
+        />
+                <Button x:Name="FindMe" Text="Εντοπισμός Διεύθυνσης" Clicked="FindMyLocation" BackgroundColor="Yellow"/>
+                <Label  Text="Ημερομηνία:" TextColor="White" FontSize="Large"/>
+                <Entry x:Name="Date"  Placeholder=" ΗΗ-ΜΜ-ΥΥΥΥ" Keyboard="Telephone"  PlaceholderColor="White" TextColor="White"  />
+                <Label  Text="Ώρα:(24ωρο)" TextColor="White" FontSize="Large"/>
+                <Entry x:Name="Time"  Placeholder=" ΩΩ.ΛΛ" Keyboard="Telephone"  PlaceholderColor="White" TextColor="White"  />
+                <Button x:Name="Continue" Text="Ολοκλήρωση" BackgroundColor="Yellow" Clicked="end_app"/>
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

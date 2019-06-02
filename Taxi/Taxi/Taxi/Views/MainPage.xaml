@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Taxi"
+             x:Class="Taxi.MainPage"
+             BackgroundImage="bg.png">
+    
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Button x:Name="Driver" Text="Είμαι Οδηγός" Clicked="gotodriver"/>
+            <Button x:Name="Customer" Text="Είμαι Πελάτης" Clicked="Reservation"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

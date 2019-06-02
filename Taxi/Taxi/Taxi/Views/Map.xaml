@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="Taxi.Views.Map"
+             BackgroundImage="bgg.png">
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="StartAndExpand" Padding="30">
+            <maps:Map VerticalOptions="Fill" HeightRequest="300"
+            x:Name="MyMap"
+            IsShowingUser="true"
+            MapType="Street"                     
+        />
+            <Button x:Name="FindMe" Text="Εντοπισμός Διεύθυνσης" Clicked="FindMyLocation" BackgroundColor="Yellow"/>
+            <Button x:Name="Continue" Text="Ολοκλήρωση" BackgroundColor="Yellow" Clicked="end_app2"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

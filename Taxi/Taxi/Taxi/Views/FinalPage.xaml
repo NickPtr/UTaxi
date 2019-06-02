@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taxi.Views.FinalPage"
+             BackgroundImage="bgg.png">
+
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+            <Image x:Name="Logo" WidthRequest="100" HeightRequest="100" />
+            <Label  Text="Εντομε...ΤΑΞΙ το Ταξι σας έρχεται" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center" TextColor="White"  />
+            <Label x:Name="onoma"/>
+            <Label x:Name="epitheto"/>
+            <Label x:Name="Tilephono"/>
+        </StackLayout>
+</ContentPage>

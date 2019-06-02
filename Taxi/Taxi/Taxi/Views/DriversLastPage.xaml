@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="Taxi.Views.DriversLastPage"
+             BackgroundImage="driver.png">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="0,150,0,0">
+            <Image x:Name="Logo" WidthRequest="100" HeightRequest="100" />
+            <Label x:Name="name" Text="Όνομα Πελάτη:" TextColor="Black"  FontSize="Medium" />
+            <Label x:Name="First1" TextColor="Black" FontSize="Large"/>
+            <Label x:Name="Last"  Text="Επώνυμο Πελάτη:" TextColor="Black"  FontSize="Medium" />
+            <Label x:Name="Last1" FontSize="Large" TextColor="Black"/>
+            <Label x:Name="telephone" Text="Τηλέφωνο Πελατη:" TextColor="Black"  FontSize="Medium" />
+            <Label x:Name="Telephone1" FontSize="Large" TextColor="Black"/>
+            <Label x:Name="date" Text="Ημερομηνία Ραντεβού:" TextColor="Black"  FontSize="Medium" />
+            <Label x:Name="Date1" FontSize="Large"/>
+            <Label x:Name="Time" Text="Ωρα ραντεβού:" TextColor="Black" FontSize="Medium"/>
+            <Label x:Name="Time1" FontSize="Large"/>
+            <maps:Map VerticalOptions="Fill" HeightRequest="300"
+            x:Name="MyMap"
+            IsShowingUser="true"
+            MapType="Street"                     
+        />
+        </StackLayout>
+            
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>
